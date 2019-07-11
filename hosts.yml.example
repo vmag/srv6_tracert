@@ -1,0 +1,4 @@
+- name: host1 
+  ipv6: dead:beef:ca1f 
+- name: host2 
+  ipv6: 1d1e:f001

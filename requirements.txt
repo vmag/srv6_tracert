@@ -1,0 +1,6 @@
+scapy
+prettytable
+argparse
+ipwhois
+
+
