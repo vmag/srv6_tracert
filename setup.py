@@ -29,8 +29,9 @@ with open('README.rst', 'r') as long_description_file:
 
 setup(
     name='srv6_tracert',
-    version='0.0.7',
+    version='0.0.8',
     url='https://github.com/vmag/srv6_tracert',
+    bugtrack_url='https://github.com/vmag/srv6_tracert/issues',
     license='MIT',
     author="Virginijus Magelinskas",
     author_email="virginijus@noia.network",
@@ -38,6 +39,17 @@ setup(
     long_description=long_description,
     scripts=["srv6_traceroute.py"],
     packages=["srv6_tracert"],
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        'License :: OSI Approved :: MIT License',
+        'Intended Audience :: Developers',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.2',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+    ],
     python_requires='>=3',
     zip_safe=False,
     platforms='any',
