@@ -29,7 +29,7 @@ with open('README.rst', 'r') as long_description_file:
 
 setup(
     name='srv6_tracert',
-    version='0.0.6',
+    version='0.0.7',
     url='https://github.com/vmag/srv6_tracert',
     license='MIT',
     author="Virginijus Magelinskas",
