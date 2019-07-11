@@ -24,7 +24,7 @@ for item in requirements:
     if item.req:
         requires.append(str(item.req))
 
-with open('README.md', 'r') as long_description_file:
+with open('README.rst', 'r') as long_description_file:
     long_description = long_description_file.read()
 
 setup(
