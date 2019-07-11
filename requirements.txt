@@ -1,6 +1,5 @@
 scapy
 prettytable
-argparse
 ipwhois
-
+pyyaml
 
