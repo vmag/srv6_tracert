@@ -24,17 +24,23 @@ for item in requirements:
     if item.req:
         requires.append(str(item.req))
 
+with open('README.md', 'r') as long_description_file:
+    long_description = long_description_file.read()
+
 setup(
     name='srv6_tracert',
-    version='0.0.1',
+    version='0.0.6',
     url='https://github.com/vmag/srv6_tracert',
     license='MIT',
     author="Virginijus Magelinskas",
     author_email="virginijus@noia.network",
     description="SRv6 compatible traceroute",
-    long_description="SRv6 compatible traceroute (runs alongside ICMP traceroute). Also supports running from a config file, and several Scapy verbosity levels",
+    long_description=long_description,
     scripts=["srv6_traceroute.py"],
     packages=["srv6_tracert"],
     python_requires='>=3',
-    zip_safe=False
+    zip_safe=False,
+    platforms='any',
+    install_requires=requires,
+    dependency_links=links
 )
