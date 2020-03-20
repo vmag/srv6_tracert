@@ -1,3 +1,4 @@
+import pip.download
 try:
     from pip._internal.req import parse_requirements
 except ImportError:
@@ -14,7 +15,7 @@ requires = []
 try:
     requirements = parse_requirements('requirements.txt', session=False)
 except:
-    requirements = parse_requriements('requirements.txt', session=pip.download.PipSession())
+    requirements = parse_requirements('requirements.txt', session=pip.download.PipSession())
 
 for item in requirements:
     if getattr(item, 'url', None):
