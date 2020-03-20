@@ -4,9 +4,9 @@ except ImportError:
     from pip.req import parse_requirements
 
 try:
-    from setuptools import setup, find_packages
+    from setuptools import setup
 except ImportError:
-    from distutils.core import setup, find_packages
+    from distutils.core import setup
 
 links = []
 requires = []
